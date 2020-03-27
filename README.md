@@ -107,7 +107,7 @@ e.g. on [Pivotal Web Services](https://run.pivotal.io/features/)
 }
 ```
 
-### on PWS
+### on CLOUD FOUNDRY
 
     $ curl -H "Accept-Encoding: gzip" http://spring-boot-gzip-compression-example-active-meerkat.cfapps.io/citylots.json > citylots.json.gz
     $ curl -H "Content-Type: application/json" http://spring-boot-gzip-compression-example-active-meerkat.cfapps.io/actuator/httptrace
