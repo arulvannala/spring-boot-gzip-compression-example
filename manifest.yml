@@ -5,8 +5,5 @@ applications:
   random-route: true
   memory: 1G
   path: build/libs/spring-boot-gzip-compression-example-1.0.0.jar
-  buildpacks: 
-    - java_buildpack
-  stack: cflinuxfs3
   env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
