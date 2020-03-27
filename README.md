@@ -31,14 +31,15 @@ From a shell
 From a shell
 
     $ cd spring-boot-gzip-compression-example
-    $ ./gradlew clean bootRun 
+    $ ./gradlew clean bootRun
 
-## To deploy to Cloud Foundry 
+## To deploy to Cloud Foundry
 
 e.g. on [Pivotal Web Services](https://run.pivotal.io/features/)
 
     $ cf login -a api.run.pivotal.io
-    $ cf push 
+    $ ./gradlew assemble
+    $ cf push
 
 
 ## To verify response is compressed
@@ -108,7 +109,7 @@ e.g. on [Pivotal Web Services](https://run.pivotal.io/features/)
 
 ### on PWS
 
-    $ curl -H "Accept-Encoding: gzip" http://spring-boot-gzip-compression-example-active-meerkat.cfapps.io/citylots.json > citylots.json.gz 
+    $ curl -H "Accept-Encoding: gzip" http://spring-boot-gzip-compression-example-active-meerkat.cfapps.io/citylots.json > citylots.json.gz
     $ curl -H "Content-Type: application/json" http://spring-boot-gzip-compression-example-active-meerkat.cfapps.io/actuator/httptrace
 
 ```json
