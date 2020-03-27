@@ -4,6 +4,6 @@ applications:
   instances: 1
   random-route: true
   memory: 1G
-  path: build/libs/spring-boot-gzip-compression-example-1.0.0.jar
+  path: build/libs/spring-boot-gzip-compression-example-1.0.0.war 
   env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
