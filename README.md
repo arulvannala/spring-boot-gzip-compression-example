@@ -9,7 +9,7 @@ Simple example that demonstrates how to configure Gzip [compression](https://doc
 
 ## To get the code
 
-    $ git clone https://github.com/pacphi/spring-boot-gzip-compression-example.git
+    $ git clone https://github.com/arulvannala/spring-boot-gzip-compression-example.git
 
 > If this is your first time using Github, review http://help.github.com to learn the basics.
 
